@@ -15,7 +15,7 @@ export const Peoples = () => {
                 {
                     store.people.map(people => (
                         <div key={people.uid} className="card text-white element" style={{ width: "18rem" }}>
-                            <img src={img} className="card-img-top" alt="..." />
+                            <img src={`https://starwars-visualguide.com/assets/img/characters/${people.uid}.jpg`} className="card-img-top" alt="..." />
                             <div className="card-body">
                                 <h5 className="card-title">{people.name}</h5>
                                 <Link to={`/details-p/${people.uid}`} className="btn btn-outline-info m-1">

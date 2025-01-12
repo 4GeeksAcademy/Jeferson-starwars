@@ -53,7 +53,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 				const favorites = getStore().favorites;
 				const newFavorites = favorites.filter(item => item !== id);
 				setStore({ favorites: newFavorites })
-			}
+			},
 		}
 	};
 };

@@ -15,7 +15,7 @@ export const Planets = () => {
                 {
                     store.planets.map(planet => (
                         <div key={planet.uid} className="card text-white element" style={{ width: "18rem" }}>
-                            <img src={img} className="card-img-top" alt="..." />
+                            <img src={`https://starwars-visualguide.com/assets/img/planets/${planet.uid}.jpg`} className="card-img-top" alt="..." />
                             <div className="card-body">
                                 <h5 className="card-title">{planet.name}</h5>
                                 <Link to={`/details-planets/${planet.uid}`} className="btn btn-outline-info m-1">

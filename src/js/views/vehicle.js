@@ -15,7 +15,7 @@ export const Vehicles = () => {
                 {
                     store.vehicles.map(vehicle => (
                         <div key={vehicle.uid} className="card text-white element" style={{ width: "18rem" }}>
-                            <img src={img} className="card-img-top" alt="..." />
+                            <img src={`https://starwars-visualguide.com/assets/img/vehicles/${vehicle.uid}.jpg`} className="card-img-top" alt="..." />
                             <div className="card-body">
                                 <h5 className="card-title">{vehicle.name}</h5>
                                 <Link to={`/details-v/${vehicle.uid}`} className="btn btn-outline-info m-1">
